@@ -1,0 +1,7 @@
+//tailwind styles
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+// Other applies
+@import './styles/const';
+@import'./styles/button';
