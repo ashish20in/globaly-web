@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,gBAAgB;AAEhB,AAAA,YAAY,CAAC;EACT,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,CAAC;CACb;;AAGD,gBAAgB;AAEhB,AAAA,WAAW,CAAC;EACR,MAAM,EAAE,OAAO;EACf,KAAK,EAAE,IAAI;CACd;;AAED,AACI,sBADkB,CAClB,YAAY,CAAC;EACT,KAAK,EAAE,eAAe;CACzB;;AAGL,AACI,sBADkB,CAClB,YAAY,CAAC;EACT,KAAK,EAAE,eAAe;CACzB",
+    "sources": [
+        "custom.scss",
+        "_slick.scss"
+    ],
+    "names": [],
+    "file": "custom.css"
+}

@@ -8,18 +8,52 @@ h4,
 h5,
 h6 {
   @apply block;
+}
+
+.heading-content, .easy-effort .heading, .created-for .heading, .journey .heading, .community-division .heading, .static-download .static-content .heading, main.inner-page-style .contents-wrapper .heading, .community-block .community-context .context-section .recent-posts {
   @apply text-brandGray-500;
+}
+
+.heading-content h1, .easy-effort .heading h1, .created-for .heading h1, .journey .heading h1, .community-division .heading h1, .static-download .static-content .heading h1, main.inner-page-style .contents-wrapper .heading h1, .community-block .community-context .context-section .recent-posts h1 {
+  @apply font-bold text-5xl capitalize leading-normal;
+}
+
+.heading-content h2, .easy-effort .heading h2, .created-for .heading h2, .journey .heading h2, .community-division .heading h2, .static-download .static-content .heading h2, main.inner-page-style .contents-wrapper .heading h2, .community-block .community-context .context-section .recent-posts h2 {
+  @apply font-bold text-4xl capitalize leading-normal;
+}
+
+.heading-content h2 span, .easy-effort .heading h2 span, .created-for .heading h2 span, .journey .heading h2 span, .community-division .heading h2 span, .static-download .static-content .heading h2 span, main.inner-page-style .contents-wrapper .heading h2 span, .community-block .community-context .context-section .recent-posts h2 span {
+  @apply text-brandPrimary-400;
+}
+
+.heading-content h3, .easy-effort .heading h3, .created-for .heading h3, .journey .heading h3, .community-division .heading h3, .static-download .static-content .heading h3, main.inner-page-style .contents-wrapper .heading h3, .community-block .community-context .context-section .recent-posts h3 {
+  @apply font-bold text-3xl capitalize leading-normal;
+}
+
+.heading-content p, .easy-effort .heading p, .created-for .heading p, .journey .heading p, .community-division .heading p, .static-download .static-content .heading p, main.inner-page-style .contents-wrapper .heading p, .community-block .community-context .context-section .recent-posts p {
+  @apply font-normal text-lg capitalize text-brandGray-500 mt-3;
+}
+
+.item-content h4, .easy-effort .mascot-content .item .text-content h4 {
+  @apply font-semibold text-2xl capitalize;
+}
+
+.item-content p, .easy-effort .mascot-content .item .text-content p {
+  @apply font-normal text-lg capitalize text-brandGray-500;
 }
 
 .overlay-clip {
   @apply absolute bg-brandSecondary-500 rounded-full z-0;
   top: 0;
   right: 0;
-  overflow-x: hidden;
   min-width: 50vw;
   min-height: 100vh;
   margin-right: -150px;
   margin-top: -300px;
+}
+
+nav {
+  @apply bg-transparent py-8 mt-0 fixed w-full z-40 top-0;
 }
 
 nav .nav-items .items {
@@ -34,7 +68,312 @@ nav .nav-items .items a {
   @apply h-screen;
 }
 
+.main-content .availabale-platforms a img {
+  @apply w-auto;
+  height: 75px;
+}
+
+.easy-effort .mascot-content {
+  @apply py-24;
+}
+
+.easy-effort .mascot-content .item .image-wrapper {
+  @apply text-center;
+}
+
+.easy-effort .mascot-content .item .image-wrapper img {
+  @apply w-auto;
+  height: 320px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.easy-effort .mascot-content .item .text-content {
+  @apply pt-10 px-10;
+}
+
+.created-for {
+  @apply pt-24;
+}
+
+.created-for .heading {
+  @apply py-12;
+}
+
+.tabs {
+  @apply mt-20;
+}
+
+.tabs .tabs-item {
+  @apply relative px-16 bg-white px-8 py-6 rounded-lg;
+}
+
+.tabs .tabs-item a {
+  @apply absolute cursor-pointer h-full w-full top-0 left-0 rounded-lg;
+}
+
+.tabs .tabs-item .contains {
+  @apply pb-5;
+}
+
+.tabs .tabs-item .contains img {
+  @apply mb-4 h-auto w-16;
+}
+
+.tabs .tabs-item .contains h4 {
+  @apply text-xl text-brandGray-500 font-semibold;
+}
+
+.tabs .tabs-item .active {
+  @apply shadow-custom transition ease-in duration-500;
+}
+
+.tab-content {
+  background: url("../assets/svg/background-dots.svg") no-repeat;
+  background-position: bottom;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.tab-content .image-wrapper {
+  @apply relative w-full h-auto px-10 py-4;
+}
+
+.counter .counter-area .data-count {
+  @apply px-24 py-2 text-center;
+}
+
+.counter .counter-area .data-count h5 {
+  @apply font-semibold text-5xl text-white;
+}
+
+.counter .counter-area .data-count p {
+  @apply text-xl font-normal;
+}
+
+.journey {
+  @apply bg-gray-100 py-32;
+}
+
+.journey .heading {
+  @apply text-center;
+}
+
+.journey .subject-area-division {
+  @apply py-16 px-16;
+}
+
+.journey .subject-area-division .image-wrapper {
+  @apply relative rounded-lg m-2;
+  height: 250px;
+}
+
+.journey .subject-area-division .image-wrapper img {
+  @apply w-full h-full rounded-lg object-cover object-center;
+}
+
+.journey .subject-area-division .image-wrapper span {
+  @apply absolute bottom-0 left-0 w-full h-full bg-black bg-opacity-25 rounded-lg flex content-end flex-wrap;
+}
+
+.journey .subject-area-division .image-wrapper span p {
+  @apply px-8 pb-10 text-white capitalize font-semibold text-xl;
+}
+
+.journey .button-wrapper {
+  @apply text-center;
+}
+
+.journey .button-wrapper .btn-style {
+  @apply transition ease-out duration-700;
+}
+
+.community-division {
+  @apply bg-white py-32;
+}
+
+.community-division .btn-style {
+  @apply border border-gray-200 inline-block mt-3;
+}
+
+.community-division .community-posts-wrapper .post {
+  @apply border border-gray-200 bg-white rounded-lg p-5;
+}
+
+.community-division .community-posts-wrapper .post .image-wrapper {
+  @apply pb-3;
+}
+
+.community-division .community-posts-wrapper .post .image-wrapper img {
+  @apply w-full object-cover object-center;
+  height: 220px;
+}
+
+.community-division .community-posts-wrapper .post .date-style span {
+  @apply uppercase font-semibold text-base text-gray-600;
+}
+
+.community-division .community-posts-wrapper .post .post-title h5 {
+  @apply font-semibold text-2xl py-2;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  height: 120px;
+}
+
+.community-division .community-posts-wrapper .post .navigate {
+  @apply pt-5;
+}
+
+.community-division .community-posts-wrapper .post .navigate .link-style {
+  @apply font-medium cursor-pointer text-brandSecondary-500 transition ease-in duration-500 outline-none;
+}
+
+.community-division .community-posts-wrapper .post .navigate .link-style svg {
+  @apply inline-block ml-3 transition ease-in duration-75;
+  width: 20px;
+  height: 20px;
+}
+
+.community-division .community-posts-wrapper .post .navigate .link-style:hover {
+  @apply text-brandPrimary-400;
+}
+
+.community-division .community-posts-wrapper .post .navigate .link-style:hover svg {
+  @apply ml-6;
+}
+
+.static-download {
+  @apply bg-white;
+}
+
+.static-download .static-content {
+  @apply py-10;
+  background: url("../assets/svg/background-dots.svg") no-repeat;
+  background-position: bottom right;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.static-download .static-content .heading {
+  @apply mt-6;
+}
+
+.static-download .static-content .availabale-platforms a img {
+  @apply w-auto;
+  height: 80px;
+}
+
+body.community nav a.Primary {
+  @apply hidden;
+}
+
+body.community nav a.White {
+  @apply visible;
+}
+
+main.inner-page-style {
+  height: 450px;
+  @apply bg-brandSecondary-500 overflow-hidden;
+}
+
+main.inner-page-style .contents-wrapper .heading {
+  @apply pb-24;
+}
+
+main.inner-page-style .contents-wrapper .heading h1,
+main.inner-page-style .contents-wrapper .heading p {
+  @apply text-white;
+}
+
+main.inner-page-style .contents-wrapper .clip-art {
+  @apply float-right;
+}
+
+main.inner-page-style .contents-wrapper .clip-art img {
+  @apply w-auto float-right -mr-10 pt-24;
+  height: 60%;
+}
+
+.community-block {
+  @apply bg-white py-20;
+}
+
+.community-block .community-context .context-section {
+  @apply pr-16;
+}
+
+.community-block .community-context .context-section .c-sec-divise {
+  @apply pb-20;
+}
+
+.community-block .community-context .context-section .recent-posts {
+  @apply bg-white;
+}
+
+.community-block .community-context .context-section .recent-posts .recent-posts-wrapper {
+  @apply pt-12;
+}
+
+.community-block .community-context .context-section .recent-posts .recent-posts-wrapper .posts {
+  @apply rounded-lg;
+}
+
+.community-block .community-context .context-section .recent-posts .recent-posts-wrapper .posts .image-wrapper {
+  @apply relative rounded-lg cursor-pointer;
+  height: 250px;
+}
+
+.community-block .community-context .context-section .recent-posts .recent-posts-wrapper .posts .image-wrapper img {
+  @apply w-full h-full rounded-lg object-cover object-center;
+}
+
+.community-block .community-context .context-section .recent-posts .recent-posts-wrapper .posts .image-wrapper .post-content {
+  @apply absolute bottom-0 left-0 w-full h-full bg-black bg-opacity-50 rounded-lg flex content-end flex-wrap p-5 ease-linear duration-500;
+}
+
+.community-block .community-context .context-section .recent-posts .recent-posts-wrapper .posts .image-wrapper .post-content .date-style span {
+  @apply uppercase font-medium text-sm text-white;
+}
+
+.community-block .community-context .context-section .recent-posts .recent-posts-wrapper .posts .image-wrapper .post-content .post-title a {
+  @apply font-medium text-lg py-1 text-white capitalize outline-none;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  height: 70px;
+}
+
+.community-block .community-context .context-section .recent-posts .recent-posts-wrapper .posts .image-wrapper .post-content .posts-tags {
+  @apply text-xs;
+}
+
+.community-block .community-context .context-section .recent-posts .recent-posts-wrapper .posts .image-wrapper .post-content .posts-tags .tags {
+  @apply px-4 py-1 rounded-sm mr-2 bg-white bg-opacity-75 capitalize;
+}
+
+.community-block .community-context .context-section .recent-posts .recent-posts-wrapper .posts .image-wrapper .post-content .posts-tags .tags i {
+  @apply text-sm;
+}
+
+.community-block .community-context .context-section .recent-posts .recent-posts-wrapper .posts .image-wrapper .post-content:hover .date-style span {
+  @apply text-green-500 transition ease-linear duration-500;
+}
+
 .btn-style {
-  @apply leading-none rounded px-8 py-4;
+  @apply leading-none rounded px-8 py-4 font-medium;
+}
+
+.btn-style svg {
+  @apply inline-block ml-3;
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
 }
 /*# sourceMappingURL=tailwind.css.map */

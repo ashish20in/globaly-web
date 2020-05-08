@@ -6,76 +6,378 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="icon" type="" sizes="32x32" href="" />
     <link rel="icon" type="" sizes="16x16" href="" />
+    <!-- Tailwind Stylesheet -->
     <link rel="stylesheet" href="/build/tailwind.css" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./styles/custom.css" />
+    <!-- Slick Slider Stylesheet -->
+    <link rel="stylesheet" href="./vendor/Slick-slider/slick/slick.css" />
+    <link rel="stylesheet" href="./vendor/Slick-slider/slick/slick-theme.css" />
     <title>Globaly.io</title>
 </head>
 
-<body class="relative bg-white overflow-hidden">
+<body class="relative bg-white overflow-x-hidden">
     <div class="overlay-clip z-0"></div>
-    <nav class="bg-transparent py-8 mt-0 fixed w-full z-40 top-0">
+    <nav id="navOnScroll">
         <div class="container w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="lg:flex-grow">
-                <a href="" class=""><img src="./assets/svg/Globaly-logo-primary.svg" alt="logo" /></a>
+                <a href="" class="inline-flex Primary"><img src="./assets/svg/Globaly-logo-primary.svg" alt="logo" /></a>
+                <a href="" class="inline-flex White hidden"><img src="./assets/svg/Globaly-logo-White.svg" alt="logo" /></a>
             </div>
             <div>
                 <ul class="nav-items">
                     <li class="items">
-                        <a href="" class="text-white hover:text-brandPrimary-500">Community</a
-              >
-            </li>
-            <li class="items">
-              <a
-                href="#"
-                class="btn-style text-white bg-brandSecondary-700 hover:bg-brandSecondary-400 hover:shadow-xl"
-              >
-                Get Mobile App</a
-              >
-            </li>
-          </ul>
+                        <a href="community.html" class="text-white hover:text-brandPrimary-500">Community</a>
+                    </li>
+                    <li class="items">
+                        <a href="#" class="btn-style text-white bg-brandSecondary-700 hover:bg-brandSecondary-400 hover:shadow-xl">
+                            Get Mobile App</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
     <main class="intro z-40">
-      <div class="container">
-        <div class="main-content flex content-center flex-wrap">
-          <div class="flex mb-4 w-full">
-            <div class="w-1/2">
-              <div class="heading-content pr-10">
-                <h1 class="font-bold text-4xl capitalize">
-                  Helping International Students To create a better life abroad.
-                </h1>
-                <p
-                  class="font-normal text-lg capitalize text-brandGray-500 mt-3"
-                >
-                  Start your ture friend of your education with globaly app
-                </p>
-              </div>
-              <div class="availabale-platforms">
-                <div class="inline-flex justify-between mt-10 pr-20">
-                  <div class="play-store mr-5">
-                    <a href=""
-                      ><img
-                        src="./assets/images/g-play.png"
-                        alt="google play store"
-                    /></a>
-            </div>
-            <div class="app-store">
-                <a href=""><img src="./assets/images/app-store.png" alt="Apple Ios store" /></a>
-            </div>
-        </div>
-        </div>
-        </div>
-        <div class="w-1/2">
-            <div class="info-graphics">
-                <div class="vector absolute top-0 mt-32">
-                    <img src="./assets/svg/infographics.svg" alt="Global education mobile app" />
+        <div class="container">
+            <div class="main-content flex content-center flex-wrap">
+                <div class="flex exl:mb-40 w-full">
+                    <div class="w-1/2">
+                        <div class="heading-content pr-10">
+                            <h1>
+                                Helping International Students To create a better life abroad.
+                            </h1>
+                            <p>
+                                Start your ture friend of your education with globaly app
+                            </p>
+                        </div>
+                        <div class="availabale-platforms">
+                            <div class="inline-flex justify-between mt-10 pr-20">
+                                <div class="play-store mr-5">
+                                    <a href=""><img src="./assets/images/g-play.png" alt="Google play store" /></a>
+                                </div>
+                                <div class="app-store">
+                                    <a href=""><img src="./assets/images/app-store.png" alt="Apple Ios store" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-1/2">
+                        <div class="info-graphics">
+                            <div class="vector absolute top-0 mt-32">
+                                <img src="./assets/svg/infographics.svg" alt="Global education mobile app" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </main>
+    <section class="easy-effort">
+        <div class="bg-white">
+            <div class="container">
+                <div class="heading text-center">
+                    <h2>
+                        Handle Effort Easily
+                    </h2>
+                    <p>
+                        Globaly lets you to follow the choices of your educational dreams quick and easy
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="mascot-content">
+                    <div class="mascot-item-wrapper">
+                        <div class="item">
+                            <div class="image-wrapper">
+                                <img src="./assets/svg/easy-effort/search.svg" alt="search for education" />
+                            </div>
+                            <div class="text-content">
+                                <h4 class="">Search</h4>
+                                <p>
+                                    Search for best courses & Institution anywhere within a seconds.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image-wrapper">
+                                <img src="./assets/svg/easy-effort/stay-updated.svg" alt="search for education" />
+                            </div>
+                            <div class="text-content">
+                                <h4 class="">Stay Updated</h4>
+                                <p>
+                                    Keep being updated with preferences & recommendation updates.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image-wrapper">
+                                <img src="./assets/svg/easy-effort/easy-connect.svg" alt="search for education" />
+                            </div>
+                            <div class="text-content">
+                                <h4 class="">Easy Connect</h4>
+                                <p>
+                                    Connect to your prefered Universities & institution within a seconds.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+    <section class="created-for">
+        <div class="bg-white">
+            <div class="container">
+                <div class="tabs" id="tabs-id">
+                    <div class="flex mb-4">
+                        <div class="w-8/12">
+                            <div class="heading">
+                                <h2>Created for educational comfort</h2>
+                                <p class="pr-32">
+                                    Use various of the services on courses and institution within one platform of your areas
+                                </p>
+                            </div>
+                            <div class="flex mb-0 flex-wrap pt-3 pb-4">
+                                <div class="w-1/3 mr-10 last:mr-0 tabs-item">
+                                    <a class="active" onclick="changeAtiveTab(event,'tab-institution')"> </a>
+                                    <div class="contains">
+                                        <img src="./assets/svg/icon-subject-areas.svg" alt="Subject Areas" />
+                                        <h4>Various Kind Of Institution & Subject Areas</h4>
+                                    </div>
+                                </div>
+                                <div class="w-1/3 mr-10 last:mr-0 tabs-item">
+                                    <a class="" onclick="changeAtiveTab(event,'tab-courses')"> </a>
+                                    <div class="contains">
+                                        <img src="./assets/svg/icon-courses.svg" alt="Courses" />
+                                        <h4>Up To Date Courses for abroad Study</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-4/12 relative flex flex-col min-w-0 -mt-32 -mb-0">
+                            <div class="flex-auto">
+                                <div class="tab-content tab-space">
+                                    <div class="tab block" id="tab-institution">
+                                        <div class="image-wrapper relative">
+                                            <img class="w-full h-auto" src="assets/images/subject-area-imagery.png" alt="subject aresas" />
+                                        </div>
+                                    </div>
+                                    <div class="tab hidden" id="tab-courses">
+                                        <div class="image-wrapper relative">
+                                            <img class="w-full h-auto" src="assets/images/courses-imagery.png" alt="subject aresas" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+    <section class="counter bg-brandSecondary-500 p-16">
+        <div class="container text-white">
+            <div class="counter-area" id="countOnScroll">
+                <div class="flex justify-center flex-wrap">
+                    <div class="data-count border-r border-brandSecondary-400 last:border-r-0">
+                        <h5>2,671</h5>
+                        <p>Institution</p>
+                    </div>
+                    <div class="data-count border-0">
+                        <h5>32,722</h5>
+                        <p>Courses</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        </main>
+    </section>
+    <section class="journey">
+        <div class="container">
+            <div class="heading">
+                <h2>Kick Off Your Journey</h2>
+                <p>All Kind of Educational Criteria and for various kinds of Students</p>
+            </div>
+            <div class="subject-area-division">
+                <div class="subjects-area-wrapper">
+                    <div class="subjects">
+                        <div class="image-wrapper">
+                            <img src="https://images.pexels.com/photos/2228306/pexels-photo-2228306.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="agriculture & vetinary" />
+                            <span>
+                                <p>Agriculture & Vetninary</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="subjects">
+                        <div class="image-wrapper">
+                            <img src="https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Architecture & Constructions" />
+                            <span>
+                                <p>Architecture & Constructions</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="subjects">
+                        <div class="image-wrapper">
+                            <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Computer Science & IT" />
+                            <span>
+                                <p>Computer Science & IT</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="subjects">
+                        <div class="image-wrapper">
+                            <img src="https://images.pexels.com/photos/542556/pexels-photo-542556.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Creative Arts & Design" />
+                            <span>
+                                <p>Creative Arts & Design</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="subjects">
+                        <div class="image-wrapper">
+                            <img src="https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Health & Medicine" />
+                            <span>
+                                <p>Health & Medicine</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="subjects">
+                        <div class="image-wrapper">
+                            <img src="https://images.pexels.com/photos/159832/justice-law-case-hearing-159832.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Law & Court" />
+                            <span>
+                                <p>Law & More...</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-wrapper">
+                <a href="" class="btn-style font-medium text-white bg-brandPrimary-500 hover:bg-brandPrimary-600 shadow-lg hover:shadow-xl">Get
+                    Mobile App</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="community-division">
+        <div class="container">
+            <div class="flex content-between px-4">
+                <div class="heading w-1/2">
+                    <h2>Our Community</h2>
+                    <p>Read our latest post posted on our community channels</p>
+                </div>
+                <div class="button-wrapper float-right w-1/2">
+                    <a href="" class="btn-style hover:border-0 hover:bg-brandSecondary-500 hover:text-white transition ease-out duration-500 hover:shadow-lg inline-block float-right">Visit
+                        Our
+                        Community <span data-feather="arrow-right"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="community-posts-wrapper mt-20">
+                <div class="post">
+                    <div class="image-wrapper">
+                        <img src="https://images.pexels.com/photos/2124916/pexels-photo-2124916.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="community posts">
+                    </div>
+                    <div class="date-style">
+                        <span class="">Published On 14 DECEMBER 2019</span>
+                    </div>
+                    <div class="post-title">
+                        <h5>Not all universities helps the international students the same way . Here’s how ?</h5>
+                    </div>
+                    <div class="navigate">
+                        <a href="" class="link-style hover:text-brandPrimary-500">Read Full Story
+                            <span data-feather="chevron-right"></span></a>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="image-wrapper">
+                        <img src="https://images.pexels.com/photos/1854129/pexels-photo-1854129.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="community posts">
+                    </div>
+                    <div class="date-style">
+                        <span class="">Published On 14 DECEMBER 2019</span>
+                    </div>
+                    <div class="post-title">
+                        <h5>Trun your late night into creativity. Here’s what you can do</h5>
+                    </div>
+                    <div class="navigate">
+                        <a href="" class="link-style hover:text-brandPrimary-500">Read Full Story
+                            <span data-feather="chevron-right"></span></a>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="image-wrapper">
+                        <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="community posts">
+                    </div>
+                    <div class="date-style">
+                        <span class="">Published On 14 DECEMBER 2019</span>
+                    </div>
+                    <div class="post-title">
+                        <h5>How it feels to become a data science student 2020 ?</h5>
+                    </div>
+                    <div class="navigate">
+                        <a href="" class="link-style hover:text-brandPrimary-500 focus:text-brandPrimary-500 ">Read Full
+                            Story
+                            <span data-feather="chevron-right"></span></a>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="image-wrapper">
+                        <img src="https://images.pexels.com/photos/2346/sport-high-united-states-of-america-ball.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="community posts">
+                    </div>
+                    <div class="date-style">
+                        <span class="">Published On 14 DECEMBER 2019</span>
+                    </div>
+                    <div class="post-title">
+                        <h5>10 Universities that have major basketball events inner college.</h5>
+                    </div>
+                    <div class="navigate">
+                        <a href="" class="link-style hover:text-brandPrimary-500 focus:text-brandPrimary-500 ">Read
+                            Full
+                            Story
+                            <span data-feather="chevron-right"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="static-download">
+        <div class="container">
+            <div class="static-content flex">
+                <div class="w-1/2 heading">
+                    <h2> <span> Guide Your Path</span></h2>
+                    <h2>Download the mobile app today</h2>
+                </div>
+                <div class=" w-1/2 availabale-platforms">
+                    <div class="inline-flex justify-between mt-10 pr-20">
+                        <div class="play-store mr-5">
+                            <a href=""><img src="./assets/images/g-play.png" alt="Google play store" /></a>
+                        </div>
+                        <div class="app-store">
+                            <a href=""><img src="./assets/images/app-store.png" alt="Apple Ios store" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="border-t border-gray-200 bg-white py-20">
+        <div class="container">
+            Footer
+        </div>
+    </footer>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- Slick js -->
+    <script type="text/javascript" src="./vendor/Slick-slider/slick/slick.min.js"></script>
+    <!-- Feather Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace();
+    </script>
+    <!-- Custom js -->
+    <script type="text/javascript" src="/js/main.js"></script>
 </body>
+
+</html>
 
 </html>

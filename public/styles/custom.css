@@ -1,0 +1,20 @@
+/* the slides */
+.slick-slide {
+  margin: 0 20px;
+  outline: 0;
+}
+
+/* the parent */
+.slick-list {
+  margin: 0 -20px;
+  width: 100%;
+}
+
+.subject-area-division .slick-track {
+  width: 100% !important;
+}
+
+.subject-area-division .slick-slide {
+  width: auto !important;
+}
+/*# sourceMappingURL=custom.css.map */

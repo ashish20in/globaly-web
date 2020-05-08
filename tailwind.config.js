@@ -11,7 +11,8 @@ module.exports = {
             sm: "640px",
             md: "768px",
             lg: "1024px",
-            xl: "1660px",
+            xl: "1280px",
+            exl: "1660px",
         },
         borderWidth: {
             default: "1px",
@@ -19,10 +20,16 @@ module.exports = {
             "2": "2px",
             "4": "4px",
         },
+        boxShadow: {
+            custom: '0px 4px 60px rgba(207, 207, 207, 0.45)',
+        },
         extend: {
             colors: {
                 brandPrimary: {
+                    700: "#8B0505",
+                    600: "#B60606",
                     500: "#D60707",
+                    400: "#DC2C2C",
                 },
                 brandSecondary: {
                     700: '#2B1528',
@@ -39,6 +46,8 @@ module.exports = {
             },
         },
     },
-    variants: {},
+    variants: {
+        borderWidth: ['responsive', 'first', 'last', 'hover', 'focus'],
+    },
     plugins: [],
 }

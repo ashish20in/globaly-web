@@ -1,4 +1,13 @@
 //btn-styles
 .btn-style {
-    @apply leading-none rounded px-8 py-4;
+    @apply leading-none rounded px-8 py-4 font-medium;
+    svg {
+        @apply inline-block ml-3;
+        width: 20px;
+        height: 20px;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+    }
 }
